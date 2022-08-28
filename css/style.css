@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container_Box {
+    height: 713px;
+    width: 100%;
+    background-color: #209cfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 25%;
+    min-width: 300px;
+    background-color: #0a0e31;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+h3 {
+    margin-bottom: 20px;
+}
+label {
+    margin: 0;
+    font-size: 15px;
+}
+.appInput,
+.app_checkBox {
+    background-color: #1c2141;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+input[type="text"] {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 7px;
+}
+.app_btnCopy .Btn_Copy {
+    width: auto;
+    padding: 5px 10px;
+}
+.passValue {
+    width: 90%;
+}
+.appRange {
+    width: 100%;
+}
+input[type="range"] {
+    width: 100%;
+    margin: 0 7px;
+}
+.appSettings {
+    width: 100%;
+}
+.app_checkBox {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_generate {
+    background-image: linear-gradient(to right, #687ae6, #784da8);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+}
+.labelNumberLength {
+    font-size: 13px;
+}

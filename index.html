@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is desc">
+
+    <!-- ********** Font Family ********** -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <!-- ********** Font Awesome ********** -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ************** my styles******************** -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generate Password</title>
+</head>
+
+<body>
+    <div class="container_Box">
+        <div class="box">
+            <h3> Password Generator </h3>
+            <div class="appInput app_btnCopy">
+                <input type="text" class="passValue">
+                <button class="btn_generate Btn_Copy" onclick="copyPass()"> Copy </button>
+            </div>
+            <div class="appRange">
+                <label class="labelNumberLength"> Length : 8 </label>
+                <div class="appInput">
+                    <label for="">8</label>
+                    <input type="range" min="8" value="8" class="passwordRange" oninput="passRange()">
+                    <label for="">100</label>
+                </div>
+            </div>
+            <div class="appSettings">
+                <label class="labelNumberLength">Settings</label>
+                <div class="app_checkBox">
+                    <label>Include Uppercase</label>
+                    <input type="checkbox" class="checkbox_Uppercase" checked>
+                </div>
+                <div class="app_checkBox">
+                    <label>Include Lowercase</label>
+                    <input type="checkbox" class="checkbox_Lowercase">
+                </div>
+                <div class="app_checkBox">
+                    <label>Include Numbers</label>
+                    <input type="checkbox" class="checkbox_Numbers">
+                </div>
+                <div class="app_checkBox">
+                    <label>Include Sympols</label>
+                    <input type="checkbox" class="checkbox_Sympols">
+                </div>
+            </div>
+            <button class="btn_generate" onclick="passGenerate()">Generate Password</button>
+        </div>
+    </div>
+
+    <!-- *_*_*_*_*_*_*_*_*_* Boot Strap local Links *_*_*_*_*_*_*_*_*_* -->
+    <script src="js/jquery@3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
